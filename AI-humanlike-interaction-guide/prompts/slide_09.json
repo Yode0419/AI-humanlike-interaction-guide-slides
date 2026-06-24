@@ -1,0 +1,47 @@
+{
+  "slide": 9,
+  "title": "風險三：過度依賴與隱私危機",
+  "prompt": "# Codex PPT Slide Image Prompt\n\n## Canvas\n{\n  \"type\": \"16:9 full-slide PowerPoint image\",\n  \"language\": \"Traditional Chinese\",\n  \"slide_number\": 9,\n  \"render_slide_number\": false\n}\n\n## Deck Goal\nExplain Google PAIR guidance on human-like AI interaction, risks of anthropomorphism/humanization, and practical design recommendations for AI product teams.\n\n## Required Background\n{\n  \"deck_context\": {\n    \"source_summary\": \"The deck explains how people naturally anthropomorphize AI, how intentionally humanized interfaces can create inaccurate expectations, and how designers can disclose AI identity, calibrate trust, guide interaction, and decide when human-likeness is actually useful.\",\n    \"core_claim\": \"AI should not become more human-like by default. Human-like cues should be used with restraint and only when they help users complete the task while preserving an accurate mental model.\",\n    \"content_sources\": [\n      \"source/AI 越像人越好嗎？人機互動設計指南.md\",\n      \"source/pair-account-for-human-like-interaction-bilingual.md\",\n      \"source/style-guide.md\"\n    ],\n    \"canonical_terms\": [\n      \"擬人化（Anthropomorphization）：人類將能動性、意圖、人格、感知或社交性投射到非人類系統上的預設認知傾向。\",\n      \"人類化（Humanization）：設計者刻意把人類特徵加入非人類系統，例如人聲、寒暄、停頓、人類身份或角色化人格。\",\n      \"具身 AI（Embodied AI）：能在實體或虛擬環境中互動並從環境學習的 AI 系統。\",\n      \"心智模型：使用者用來預測系統行為的簡化理解；能運作不代表準確。\",\n      \"互動引導：Input templates, Clarifications, Obstacles, Pointers, Acknowledgement。\"\n    ],\n    \"robot_character\": \"Use one consistent original compact utility robot across the deck: warm-white matte protective shell, dark horizontal sensor visor, two yellow pixel-like eyes, compact wheeled base, subtle panel lines, no mouth, no eyebrows, no human face, no humanoid body, no five-finger hands. Use the provided robot reference only for broad traits and the approved sample slide as the stronger style reference.\"\n  },\n  \"slide_local_context\": {\n    \"required_background\": \"PAIR source: When users attribute human-like capabilities to AI, they may disclose more information and over-rely on it in place of qualified professional help.\"\n  }\n}\n\n## Global Style\n{\n  \"name\": \"UX technical guide with original compact robot\",\n  \"visual_direction\": \"Bright polished UX/HCI presentation. Combine clean 2D technical spec diagrams with matte 3D clay-like rendering of one consistent compact utility robot character.\",\n  \"color_palette\": \"#F8FAFC background, #FFFFFF cards, #1F2937 main text, #667085 secondary text, #B8C2CC technical lines, #FFD84D robot attention, #4DA3FF AI/system flow, #FFB38A human social expectation, #F59B9B risk/mismatch, #7BC8A4 correct interaction.\",\n  \"typography\": \"Large readable Traditional Chinese titles in a Manrope/Noto Sans TC-like geometric sans style; compact body text in Inter/Noto Sans TC-like sans; mono labels only for short English status tags.\",\n  \"texture_and_finish\": \"Clean studio lighting, pale neutral background, restrained depth, soft ambient shadows, matte product rendering, crisp 2D diagrams.\",\n  \"deck_consistency\": \"Keep one visual identity across all slides. Vary compositions by slide role. Do not repeat the same three-card layout. Keep at least 35-40% whitespace and one main visual focus.\"\n}\n\n## Input Images\n\n- Image 1: C:\\yode\\code\\slides\\AI-humanlike-interaction-guide\\origin_image\\slide_13.png — approved sample slide style reference; match palette, typography mood, density, texture, 2D spec diagram style, and original robot identity; do not copy the exact slide layout unless requested\n- Image 2: C:\\yode\\code\\slides\\assets\\mo-reference.png — broad visual reference for the original compact utility robot character; style reference only; do not directly copy the referenced movie character, logo, exact proportions, panel shapes, or complete part layout\n\n\n## Slide\n{\n  \"number\": 9,\n  \"title\": \"風險三：過度依賴與隱私危機\",\n  \"role\": \"risk series\",\n  \"intent\": \"Show that perceived empathy may lead users to reveal too much or rely too much.\"\n}\n\n## Text\n{\n  \"title\": \"風險三：過度依賴與隱私危機\",\n  \"key_points\": [\n    \"當 AI 讓人覺得它懂我，使用者可能提供更多私密脈絡\",\n    \"資料如何保存與使用，使用者未必清楚\",\n    \"AI 不應取代合格專業協助\"\n  ],\n  \"speaker_focus\": null\n}\n\n## Layout\n{\n  \"composition\": \"Private information stream flows from user side toward AI; robot puts up a gentle warning/barrier and a visible privacy boundary\",\n  \"relationship_to_previous_slide\": \"continues risk sequence with privacy flow visual\"\n}\n\n## Visual Elements\n{\n  \"main_visual\": \"Sensitive data flow and boundary\",\n  \"supporting_elements\": \"Privacy risk label and small warning state\"\n}\n\n## Constraints\n[\n  \"No scary imagery\",\n  \"Do not show real personal data\"\n]\n\n## Style Reference Rule\nUse Image 1 as the approved sample-slide style reference. Match its palette, typography mood, density, texture, and overall visual identity. Do not copy its exact layout unless this slide's layout explicitly asks for it.\n\n## Input Image Handling Rules\nFor any input image marked as a strict input asset, include it visibly and preserve its content. Do not redraw, replace, relabel, or invent a similar figure. Scale and crop only as needed for composition while keeping the important labels, arrows, data, and relationships recognizable.\n\n## Universal Constraints\n- The final image itself must contain the title and key points.\n- Render Chinese text exactly and legibly; avoid garbled characters.\n- Keep the confirmed deck style consistent while varying layout by slide role.\n- No watermark, unrelated logo, or extra slide number.\n",
+  "out": "slide_09.png",
+  "input_images": [
+    {
+      "path": "C:\\yode\\code\\slides\\AI-humanlike-interaction-guide\\origin_image\\slide_13.png",
+      "role": "approved sample slide style reference",
+      "fidelity": "match palette, typography mood, density, texture, 2D spec diagram style, and original robot identity; do not copy the exact slide layout unless requested"
+    },
+    {
+      "path": "C:\\yode\\code\\slides\\assets\\mo-reference.png",
+      "fidelity": "style reference only; do not directly copy the referenced movie character, logo, exact proportions, panel shapes, or complete part layout",
+      "role": "broad visual reference for the original compact utility robot character"
+    }
+  ],
+  "requires_context_images": true,
+  "expected_backend": "built-in image tool",
+  "sample_generation_method": {
+    "backend_used": "built-in image tool",
+    "tool_name": "image_gen",
+    "mode": "generate",
+    "prompt_source": "AI-humanlike-interaction-guide/slide_13_sample_prompt.draft.txt plus user-provided robot reference image in conversation",
+    "size": "16:9 landscape",
+    "quality": "built-in default",
+    "approved_sample_path": "C:\\yode\\code\\slides\\AI-humanlike-interaction-guide\\origin_image\\slide_13.png",
+    "input_context_preparation": "The robot reference image was uploaded directly in the conversation; the approved slide_13.png was generated with built-in image_gen using that visible reference image.",
+    "handoff_rule": "Use the built-in image tool and the same visual rules; use the approved sample slide as style reference and the robot reference as broad character reference. Return a blocker if the built-in image tool or required images are unavailable."
+  },
+  "generation_contract": {
+    "must_use_selected_image_backend": true,
+    "must_match_sample_generation_method": true,
+    "forbidden_final_image_methods": [
+      "local drawing/rendering scripts",
+      "Pillow-generated slides",
+      "SVG/HTML/CSS/canvas screenshots",
+      "python-pptx/PptxGenJS/native PPT layout screenshots",
+      "manually composited text/image overlays"
+    ],
+    "must_return": [
+      "backend_used",
+      "selected_source",
+      "qa_note"
+    ]
+  }
+}

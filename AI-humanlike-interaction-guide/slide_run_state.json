@@ -1,0 +1,66 @@
+{
+  "status": "slides_recorded",
+  "history": [
+    {
+      "from": "created",
+      "to": "jobs_prepared",
+      "at": "2026-06-24T07:16:48Z",
+      "note": "prepared slide prompt jobs"
+    },
+    {
+      "from": "jobs_prepared",
+      "to": "blocked",
+      "at": "2026-06-24T07:27:58Z",
+      "note": "slide_04: Initial candidate failed QA: title and required Anthropomorphization/Humanization contrast did not match outline."
+    },
+    {
+      "from": "blocked",
+      "to": "jobs_prepared",
+      "at": "2026-06-24T07:35:07Z",
+      "note": "prepared slide prompt jobs"
+    },
+    {
+      "from": "jobs_prepared",
+      "to": "blocked",
+      "at": "2026-06-24T07:49:08Z",
+      "note": "slide_12: Reported selected_source was actually slide_10 image; QA failed for slide_12 verification-loop requirements."
+    },
+    {
+      "from": "blocked",
+      "to": "jobs_prepared",
+      "at": "2026-06-24T07:53:09Z",
+      "note": "prepared slide prompt jobs"
+    },
+    {
+      "from": "jobs_prepared",
+      "to": "slides_dispatched",
+      "at": "2026-06-24T07:56:24Z",
+      "note": "all slide jobs dispatched"
+    },
+    {
+      "from": "slides_dispatched",
+      "to": "slides_recorded",
+      "at": "2026-06-24T08:03:55Z",
+      "note": "all slide images recorded"
+    },
+    {
+      "from": "slides_recorded",
+      "to": "jobs_prepared",
+      "at": "2026-06-24T08:15:59Z",
+      "note": "prepared slide prompt jobs"
+    },
+    {
+      "from": "jobs_prepared",
+      "to": "slides_dispatched",
+      "at": "2026-06-24T08:17:59Z",
+      "note": "all slide jobs dispatched"
+    },
+    {
+      "from": "slides_dispatched",
+      "to": "slides_recorded",
+      "at": "2026-06-24T08:21:58Z",
+      "note": "all slide images recorded"
+    }
+  ],
+  "updated_at": "2026-06-24T08:21:58Z"
+}

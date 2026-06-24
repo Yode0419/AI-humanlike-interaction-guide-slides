@@ -1,0 +1,46 @@
+﻿Create one complete 16:9 presentation slide image in Traditional Chinese.
+
+Slide title:
+建議三：給予明確的互動引導
+
+Core message:
+用輸入範本與釐清問題，把控制權交還給使用者。
+
+Use the attached input image only as a broad visual reference for a compact utility robot.
+Design a new original robot identity based on abstract traits only: compact warm-white matte shell, dark horizontal sensor visor, two small yellow pixel-like eyes, compact wheeled base, simple utility-product silhouette, subtle panel lines, slightly worn but friendly material.
+Do not copy the referenced movie character, logo, exact proportions, exact panel shapes, or complete part layout.
+
+Visual style:
+polished UX / human-computer interaction design guide, bright pale neutral background #F8FAFC, clean studio lighting, matte 3D clay-like product rendering for the robot, crisp 2D technical spec diagrams, restrained depth, generous whitespace, modern and rational but friendly.
+
+Composition:
+Base the content on the PAIR guidebook recommendations for Input templates and Clarifications: show users how to formulate requests, ask a clarifying question when input is underspecified, and return control to the user.
+
+Use a central branching interaction diagram. On the left, show a simple input node labeled:
+「幫我整理一下」
+This ambiguous input splits into two clean branches labeled:
+A：整理重點
+B：改寫語氣
+Place the compact robot near the branch point, slightly tilted forward as if pausing and asking a clarification question. The robot should not smile and should not have a mouth, eyebrows, human hands, or humanoid body proportions.
+Use a small interface speech bubble near the robot:
+「你的意思是 A 還是 B？」
+At the right side, show a green control-return label:
+控制權回到使用者
+
+Information labels:
+Use short readable labels only. Include three small technical labels in mono style:
+INPUT TEMPLATE
+CLARIFY
+USER CONTROL
+
+Palette:
+Neutral background and dark graphite text. Use #4DA3FF for AI/system flow, #7BC8A4 for appropriate interaction and user control, #FFD84D for robot eye light, #B8C2CC for technical lines. Avoid more than two accent colors beyond the robot eyes.
+
+Layout constraints:
+Keep at least 35-40% whitespace.
+Only one main visual focus.
+No dense text, no decorative fake HUD, no cyberpunk, no dark sci-fi background, no childlike cartoon style.
+No page number.
+Make Traditional Chinese text large, clear, and not garbled.
+The slide must look like a refined UX design guideline slide, not a robot engineering blueprint.
+

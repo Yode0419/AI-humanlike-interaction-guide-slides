@@ -1,0 +1,672 @@
+{
+  "run_status": "slides_recorded",
+  "deck_name": "AI-humanlike-interaction-guide",
+  "selected_backend": "built-in image tool",
+  "sample_generation_method": {
+    "backend_used": "built-in image tool",
+    "tool_name": "image_gen",
+    "mode": "generate",
+    "prompt_source": "AI-humanlike-interaction-guide/slide_13_sample_prompt.draft.txt plus user-provided robot reference image in conversation",
+    "size": "16:9 landscape",
+    "quality": "built-in default",
+    "approved_sample_path": "C:\\yode\\code\\slides\\AI-humanlike-interaction-guide\\origin_image\\slide_13.png",
+    "input_context_preparation": "The robot reference image was uploaded directly in the conversation; the approved slide_13.png was generated with built-in image_gen using that visible reference image.",
+    "handoff_rule": "Use the built-in image tool and the same visual rules; use the approved sample slide as style reference and the robot reference as broad character reference. Return a blocker if the built-in image tool or required images are unavailable."
+  },
+  "max_concurrent_slides": 6,
+  "slides": [
+    {
+      "slide_id": "slide_01",
+      "number": 1,
+      "title": "AI 越像人越好嗎？",
+      "job": "prompts/slide_01.json",
+      "out": "origin_image/slide_01.png",
+      "input_images": [
+        {
+          "path": "C:\\yode\\code\\slides\\AI-humanlike-interaction-guide\\origin_image\\slide_13.png",
+          "role": "approved sample slide style reference",
+          "fidelity": "match palette, typography mood, density, texture, 2D spec diagram style, and original robot identity; do not copy the exact slide layout unless requested"
+        },
+        {
+          "path": "C:\\yode\\code\\slides\\assets\\mo-reference.png",
+          "fidelity": "style reference only; do not directly copy the referenced movie character, logo, exact proportions, panel shapes, or complete part layout",
+          "role": "broad visual reference for the original compact utility robot character"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "019ef87d-f8a7-7362-a2c4-15ed75e789cc",
+        "agent_nickname": "Gauss",
+        "prompt": "prompts/slide_01.json",
+        "prompt_sha256": "0cd512483f411331ca4985384b696efb03534ddc648fec621c4338fe03c9f698",
+        "dispatched_at": "2026-06-24T08:17:50Z"
+      },
+      "result": {
+        "agent_id": "019ef87d-f8a7-7362-a2c4-15ed75e789cc",
+        "backend_used": "built-in image tool",
+        "selected_source": "C:\\Users\\yode0\\.codex\\generated_images\\019ef87d-f8a7-7362-a2c4-15ed75e789cc\\ig_09604ac1b67fc1fb016a3b84b79878819b88cc7bd755e32e35.png",
+        "selected_source_sha256": "afc865b9db03a3d4a3a925b061b8331279e6767988f777ca4dc5551d3b60ad42",
+        "final_image": "origin_image/slide_01.png",
+        "final_image_sha256": "afc865b9db03a3d4a3a925b061b8331279e6767988f777ca4dc5551d3b60ad42",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Previously generated slide reused; content unchanged for this revision.",
+        "recorded_at": "2026-06-24T08:17:50Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_02",
+      "number": 2,
+      "title": "今天會聊些什麼？",
+      "job": "prompts/slide_02.json",
+      "out": "origin_image/slide_02.png",
+      "input_images": [
+        {
+          "path": "C:\\yode\\code\\slides\\AI-humanlike-interaction-guide\\origin_image\\slide_13.png",
+          "role": "approved sample slide style reference",
+          "fidelity": "match palette, typography mood, density, texture, 2D spec diagram style, and original robot identity; do not copy the exact slide layout unless requested"
+        },
+        {
+          "path": "C:\\yode\\code\\slides\\assets\\mo-reference.png",
+          "fidelity": "style reference only; do not directly copy the referenced movie character, logo, exact proportions, panel shapes, or complete part layout",
+          "role": "broad visual reference for the original compact utility robot character"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "019ef884-0f5f-7650-8f80-4f1c788b92a7",
+        "agent_nickname": "Banach",
+        "prompt": "prompts/slide_02.json",
+        "prompt_sha256": "c9d5dd10e2981a4ae193f967c9c00d4d655cd81b86386e93cf597329db7ee37a",
+        "dispatched_at": "2026-06-24T08:17:51Z"
+      },
+      "result": {
+        "agent_id": "019ef884-0f5f-7650-8f80-4f1c788b92a7",
+        "backend_used": "built-in image tool",
+        "selected_source": "C:\\Users\\yode0\\.codex\\generated_images\\019ef884-0f5f-7650-8f80-4f1c788b92a7\\ig_0c50049f65395ad0016a3b88ec6c948191ba096cd93f294930.png",
+        "selected_source_sha256": "ed393fbe2b2f027b8770884fd5986f19855e74fe019941c83965c7b39be03602",
+        "final_image": "origin_image/slide_02.png",
+        "final_image_sha256": "ed393fbe2b2f027b8770884fd5986f19855e74fe019941c83965c7b39be03602",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Previously generated slide reused; content unchanged for this revision.",
+        "recorded_at": "2026-06-24T08:17:51Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_03",
+      "number": 3,
+      "title": "從一個日常小現象說起",
+      "job": "prompts/slide_03.json",
+      "out": "origin_image/slide_03.png",
+      "input_images": [
+        {
+          "path": "C:\\yode\\code\\slides\\AI-humanlike-interaction-guide\\origin_image\\slide_13.png",
+          "role": "approved sample slide style reference",
+          "fidelity": "match palette, typography mood, density, texture, 2D spec diagram style, and original robot identity; do not copy the exact slide layout unless requested"
+        },
+        {
+          "path": "C:\\yode\\code\\slides\\assets\\mo-reference.png",
+          "fidelity": "style reference only; do not directly copy the referenced movie character, logo, exact proportions, panel shapes, or complete part layout",
+          "role": "broad visual reference for the original compact utility robot character"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "019ef884-3145-7e50-a13b-1f294ca58a97",
+        "agent_nickname": "Godel",
+        "prompt": "prompts/slide_03.json",
+        "prompt_sha256": "61419ee6e55ef8bcc522087f08a712a0ab234152163298e10c5e48ee37beb1a8",
+        "dispatched_at": "2026-06-24T08:17:52Z"
+      },
+      "result": {
+        "agent_id": "019ef884-3145-7e50-a13b-1f294ca58a97",
+        "backend_used": "built-in image tool",
+        "selected_source": "C:\\Users\\yode0\\.codex\\generated_images\\019ef884-3145-7e50-a13b-1f294ca58a97\\ig_0dcef3632bce0eb5016a3b864f37bc8191bac8a8591cb45aa0.png",
+        "selected_source_sha256": "de093ae0d575d55ae276a2a3cd29a4e5e410766246b3634bd8656ee870186710",
+        "final_image": "origin_image/slide_03.png",
+        "final_image_sha256": "de093ae0d575d55ae276a2a3cd29a4e5e410766246b3634bd8656ee870186710",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Previously generated slide reused; content unchanged for this revision.",
+        "recorded_at": "2026-06-24T08:17:52Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_04",
+      "number": 4,
+      "title": "本能 vs. 設計",
+      "job": "prompts/slide_04.json",
+      "out": "origin_image/slide_04.png",
+      "input_images": [
+        {
+          "path": "C:\\yode\\code\\slides\\AI-humanlike-interaction-guide\\origin_image\\slide_13.png",
+          "role": "approved sample slide style reference",
+          "fidelity": "match palette, typography mood, density, texture, 2D spec diagram style, and original robot identity; do not copy the exact slide layout unless requested"
+        },
+        {
+          "path": "C:\\yode\\code\\slides\\assets\\mo-reference.png",
+          "fidelity": "style reference only; do not directly copy the referenced movie character, logo, exact proportions, panel shapes, or complete part layout",
+          "role": "broad visual reference for the original compact utility robot character"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "019ef882-f1f4-7620-bf3e-1b4d3d55b9b3",
+        "agent_nickname": "Meitner",
+        "prompt": "prompts/slide_04.json",
+        "prompt_sha256": "e700cc13f2f7208489952674fcaa0fe42615a52cffb8cece3c92f4492d73ad39",
+        "dispatched_at": "2026-06-24T08:17:53Z"
+      },
+      "result": {
+        "agent_id": "019ef882-f1f4-7620-bf3e-1b4d3d55b9b3",
+        "backend_used": "built-in image tool",
+        "selected_source": "C:\\Users\\yode0\\.codex\\generated_images\\019ef882-f1f4-7620-bf3e-1b4d3d55b9b3\\ig_096e791bab94e0a8016a3b85fa495081919c2a9ed067a6e11e.png",
+        "selected_source_sha256": "022802e443a46ada39cefe3eadb9e86feef5e29e366ba5cc292259ba1eb25d6e",
+        "final_image": "origin_image/slide_04.png",
+        "final_image_sha256": "022802e443a46ada39cefe3eadb9e86feef5e29e366ba5cc292259ba1eb25d6e",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Previously generated slide reused; content unchanged for this revision.",
+        "recorded_at": "2026-06-24T08:17:53Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_05",
+      "number": 5,
+      "title": "當 AI 擁有身體",
+      "job": "prompts/slide_05.json",
+      "out": "origin_image/slide_05.png",
+      "input_images": [
+        {
+          "path": "C:\\yode\\code\\slides\\AI-humanlike-interaction-guide\\origin_image\\slide_13.png",
+          "role": "approved sample slide style reference",
+          "fidelity": "match palette, typography mood, density, texture, 2D spec diagram style, and original robot identity; do not copy the exact slide layout unless requested"
+        },
+        {
+          "path": "C:\\yode\\code\\slides\\assets\\mo-reference.png",
+          "fidelity": "style reference only; do not directly copy the referenced movie character, logo, exact proportions, panel shapes, or complete part layout",
+          "role": "broad visual reference for the original compact utility robot character"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "019ef87e-ad75-7f41-b97f-73d86ea5aa97",
+        "agent_nickname": "Curie",
+        "prompt": "prompts/slide_05.json",
+        "prompt_sha256": "82fe8fda2723dd596fb407425347b5b5971d912f1e485864fff698a61056948d",
+        "dispatched_at": "2026-06-24T08:17:53Z"
+      },
+      "result": {
+        "agent_id": "019ef87e-ad75-7f41-b97f-73d86ea5aa97",
+        "backend_used": "built-in image tool",
+        "selected_source": "C:\\Users\\yode0\\.codex\\generated_images\\019ef87e-ad75-7f41-b97f-73d86ea5aa97\\ig_0237bbc2f8d82602016a3b84ec9f24819189126d7bf26a36b4.png",
+        "selected_source_sha256": "c04f1742ad85fd410de5b562a39cf02230061b483dc4c34a039f855eb6755609",
+        "final_image": "origin_image/slide_05.png",
+        "final_image_sha256": "c04f1742ad85fd410de5b562a39cf02230061b483dc4c34a039f855eb6755609",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Previously generated slide reused; content unchanged for this revision.",
+        "recorded_at": "2026-06-24T08:17:54Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_06",
+      "number": 6,
+      "title": "心理模型與期待落差",
+      "job": "prompts/slide_06.json",
+      "out": "origin_image/slide_06.png",
+      "input_images": [
+        {
+          "path": "C:\\yode\\code\\slides\\AI-humanlike-interaction-guide\\origin_image\\slide_13.png",
+          "role": "approved sample slide style reference",
+          "fidelity": "match palette, typography mood, density, texture, 2D spec diagram style, and original robot identity; do not copy the exact slide layout unless requested"
+        },
+        {
+          "path": "C:\\yode\\code\\slides\\assets\\mo-reference.png",
+          "fidelity": "style reference only; do not directly copy the referenced movie character, logo, exact proportions, panel shapes, or complete part layout",
+          "role": "broad visual reference for the original compact utility robot character"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "019ef891-1093-7002-812d-af17ab748eb5",
+        "agent_nickname": "Singer",
+        "prompt": "prompts/slide_06.json",
+        "prompt_sha256": "6710be585d3cd65b3130e5163375176a7a6fe7a2b79d98d395178381e8d79245",
+        "dispatched_at": "2026-06-24T08:17:54Z"
+      },
+      "result": {
+        "agent_id": "019ef891-1093-7002-812d-af17ab748eb5",
+        "backend_used": "built-in image tool",
+        "selected_source": "C:\\Users\\yode0\\.codex\\generated_images\\019ef891-1093-7002-812d-af17ab748eb5\\ig_0a53047bee4baabe016a3b899d6cc88191a4a400b90732b157.png",
+        "selected_source_sha256": "f2394c3f4441c19b26787e32ee395b7a2b8f0cb2b661d61bd87b671b75e429f4",
+        "final_image": "origin_image/slide_06.png",
+        "final_image_sha256": "f2394c3f4441c19b26787e32ee395b7a2b8f0cb2b661d61bd87b671b75e429f4",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Previously generated slide reused; content unchanged for this revision.",
+        "recorded_at": "2026-06-24T08:17:55Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_07",
+      "number": 7,
+      "title": "風險一：拿 AI 跟人比較",
+      "job": "prompts/slide_07.json",
+      "out": "origin_image/slide_07.png",
+      "input_images": [
+        {
+          "path": "C:\\yode\\code\\slides\\AI-humanlike-interaction-guide\\origin_image\\slide_13.png",
+          "role": "approved sample slide style reference",
+          "fidelity": "match palette, typography mood, density, texture, 2D spec diagram style, and original robot identity; do not copy the exact slide layout unless requested"
+        },
+        {
+          "path": "C:\\yode\\code\\slides\\assets\\mo-reference.png",
+          "fidelity": "style reference only; do not directly copy the referenced movie character, logo, exact proportions, panel shapes, or complete part layout",
+          "role": "broad visual reference for the original compact utility robot character"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "019ef895-b424-7c50-9d68-334871163cd0",
+        "agent_nickname": "Hilbert",
+        "prompt": "prompts/slide_07.json",
+        "prompt_sha256": "823dfe9c50c0d2e86e3d8a9fc10be6b1f14316cb1e6e947525f43c3328df9cb1",
+        "dispatched_at": "2026-06-24T08:17:55Z"
+      },
+      "result": {
+        "agent_id": "019ef895-b424-7c50-9d68-334871163cd0",
+        "backend_used": "built-in image tool",
+        "selected_source": "C:\\Users\\yode0\\.codex\\generated_images\\019ef895-b424-7c50-9d68-334871163cd0\\ig_05635d51c88f3c42016a3b8aceccc88191af355fa445be1372.png",
+        "selected_source_sha256": "3932d93805bc1966137d6c85b3b9c4a4fa1e802860f47ea169a900fb06dbd09e",
+        "final_image": "origin_image/slide_07.png",
+        "final_image_sha256": "3932d93805bc1966137d6c85b3b9c4a4fa1e802860f47ea169a900fb06dbd09e",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Previously generated slide reused; content unchanged for this revision.",
+        "recorded_at": "2026-06-24T08:17:56Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_08",
+      "number": 8,
+      "title": "風險二：界線模糊",
+      "job": "prompts/slide_08.json",
+      "out": "origin_image/slide_08.png",
+      "input_images": [
+        {
+          "path": "C:\\yode\\code\\slides\\AI-humanlike-interaction-guide\\origin_image\\slide_13.png",
+          "role": "approved sample slide style reference",
+          "fidelity": "match palette, typography mood, density, texture, 2D spec diagram style, and original robot identity; do not copy the exact slide layout unless requested"
+        },
+        {
+          "path": "C:\\yode\\code\\slides\\assets\\mo-reference.png",
+          "fidelity": "style reference only; do not directly copy the referenced movie character, logo, exact proportions, panel shapes, or complete part layout",
+          "role": "broad visual reference for the original compact utility robot character"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "019ef895-d3f3-7a50-a553-98110bc5ee8a",
+        "agent_nickname": "Noether",
+        "prompt": "prompts/slide_08.json",
+        "prompt_sha256": "87398738cd732d2e64113f8fc7d3cb63ede79d3dcac1b12da2ac5b658911439b",
+        "dispatched_at": "2026-06-24T08:17:56Z"
+      },
+      "result": {
+        "agent_id": "019ef895-d3f3-7a50-a553-98110bc5ee8a",
+        "backend_used": "built-in image tool",
+        "selected_source": "C:\\Users\\yode0\\.codex\\generated_images\\019ef895-d3f3-7a50-a553-98110bc5ee8a\\ig_01311f56d1fea499016a3b8ba565a48191a3a86dc5616a86e2.png",
+        "selected_source_sha256": "76834509ef7b53977e6f0dfc51da32498598bb87df21d4935c53a2ea6794d625",
+        "final_image": "origin_image/slide_08.png",
+        "final_image_sha256": "76834509ef7b53977e6f0dfc51da32498598bb87df21d4935c53a2ea6794d625",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Previously generated slide reused; content unchanged for this revision.",
+        "recorded_at": "2026-06-24T08:17:56Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_09",
+      "number": 9,
+      "title": "風險三：過度依賴與隱私危機",
+      "job": "prompts/slide_09.json",
+      "out": "origin_image/slide_09.png",
+      "input_images": [
+        {
+          "path": "C:\\yode\\code\\slides\\AI-humanlike-interaction-guide\\origin_image\\slide_13.png",
+          "role": "approved sample slide style reference",
+          "fidelity": "match palette, typography mood, density, texture, 2D spec diagram style, and original robot identity; do not copy the exact slide layout unless requested"
+        },
+        {
+          "path": "C:\\yode\\code\\slides\\assets\\mo-reference.png",
+          "fidelity": "style reference only; do not directly copy the referenced movie character, logo, exact proportions, panel shapes, or complete part layout",
+          "role": "broad visual reference for the original compact utility robot character"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "019ef895-f270-7253-8d94-34a74eeaff1c",
+        "agent_nickname": "Dirac",
+        "prompt": "prompts/slide_09.json",
+        "prompt_sha256": "e3f1faf69ab433500e75296a8cfb4a608d7d4bb86fa41076bd3497af68b79b1b",
+        "dispatched_at": "2026-06-24T08:17:57Z"
+      },
+      "result": {
+        "agent_id": "019ef895-f270-7253-8d94-34a74eeaff1c",
+        "backend_used": "built-in image tool",
+        "selected_source": "C:\\Users\\yode0\\.codex\\generated_images\\019ef895-f270-7253-8d94-34a74eeaff1c\\ig_0d489c90aec36725016a3b8ad45e0c8191a699c21a8e821691.png",
+        "selected_source_sha256": "768dd1e39e14cb1cd556584f82c2b3dea260cb5c16b224059235d5d58399adee",
+        "final_image": "origin_image/slide_09.png",
+        "final_image_sha256": "768dd1e39e14cb1cd556584f82c2b3dea260cb5c16b224059235d5d58399adee",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Previously generated slide reused; content unchanged for this revision.",
+        "recorded_at": "2026-06-24T08:17:57Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_10",
+      "number": 10,
+      "title": "風險四：專業工具反效果",
+      "job": "prompts/slide_10.json",
+      "out": "origin_image/slide_10.png",
+      "input_images": [
+        {
+          "path": "C:\\yode\\code\\slides\\AI-humanlike-interaction-guide\\origin_image\\slide_13.png",
+          "role": "approved sample slide style reference",
+          "fidelity": "match palette, typography mood, density, texture, 2D spec diagram style, and original robot identity; do not copy the exact slide layout unless requested"
+        },
+        {
+          "path": "C:\\yode\\code\\slides\\assets\\mo-reference.png",
+          "fidelity": "style reference only; do not directly copy the referenced movie character, logo, exact proportions, panel shapes, or complete part layout",
+          "role": "broad visual reference for the original compact utility robot character"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "019ef896-1383-77b3-8266-491d893677ae",
+        "agent_nickname": "Fermi",
+        "prompt": "prompts/slide_10.json",
+        "prompt_sha256": "422e20c0e1595ce6880a6398a371032fbe8bbaeb8ea71721f224962d657cf29d",
+        "dispatched_at": "2026-06-24T08:17:57Z"
+      },
+      "result": {
+        "agent_id": "019ef896-1383-77b3-8266-491d893677ae",
+        "backend_used": "built-in image tool",
+        "selected_source": "C:\\Users\\yode0\\.codex\\generated_images\\019ef896-1383-77b3-8266-491d893677ae\\ig_0830a2c0add7d66c016a3b8ae22f00819796b48e8d64425d3f.png",
+        "selected_source_sha256": "1d3f455fcbaac111a32c4fd82f7b96f60d852bc26aab3f7b852760e4ce93ab93",
+        "final_image": "origin_image/slide_10.png",
+        "final_image_sha256": "1d3f455fcbaac111a32c4fd82f7b96f60d852bc26aab3f7b852760e4ce93ab93",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Previously generated slide reused; content unchanged for this revision.",
+        "recorded_at": "2026-06-24T08:17:58Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_11",
+      "number": 11,
+      "title": "建議一：承認我是 AI",
+      "job": "prompts/slide_11.json",
+      "out": "origin_image/slide_11.png",
+      "input_images": [
+        {
+          "path": "C:\\yode\\code\\slides\\AI-humanlike-interaction-guide\\origin_image\\slide_13.png",
+          "role": "approved sample slide style reference",
+          "fidelity": "match palette, typography mood, density, texture, 2D spec diagram style, and original robot identity; do not copy the exact slide layout unless requested"
+        },
+        {
+          "path": "C:\\yode\\code\\slides\\assets\\mo-reference.png",
+          "fidelity": "style reference only; do not directly copy the referenced movie character, logo, exact proportions, panel shapes, or complete part layout",
+          "role": "broad visual reference for the original compact utility robot character"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "019ef896-3805-7f53-a299-a985717d2d97",
+        "agent_nickname": "Ptolemy",
+        "prompt": "prompts/slide_11.json",
+        "prompt_sha256": "a5d7c50da988ecfa77b67e29fff7d1753eb735d90df6b5855e234d79a9d8885d",
+        "dispatched_at": "2026-06-24T08:17:58Z"
+      },
+      "result": {
+        "agent_id": "019ef896-3805-7f53-a299-a985717d2d97",
+        "backend_used": "built-in image tool",
+        "selected_source": "C:\\Users\\yode0\\.codex\\generated_images\\019ef896-3805-7f53-a299-a985717d2d97\\ig_00767986b1a16c37016a3b8af415a88191b7957c88251a5325.png",
+        "selected_source_sha256": "93f16df0f283fd0a7447c2e51f8e91b359fb0d167bbf5e29cc54e22dd49a7cbc",
+        "final_image": "origin_image/slide_11.png",
+        "final_image_sha256": "93f16df0f283fd0a7447c2e51f8e91b359fb0d167bbf5e29cc54e22dd49a7cbc",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Previously generated slide reused; content unchanged for this revision.",
+        "recorded_at": "2026-06-24T08:17:59Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_12",
+      "number": 12,
+      "title": "建議二：讓使用者自己驗證",
+      "job": "prompts/slide_12.json",
+      "out": "origin_image/slide_12.png",
+      "input_images": [
+        {
+          "path": "C:\\yode\\code\\slides\\AI-humanlike-interaction-guide\\origin_image\\slide_13.png",
+          "role": "approved sample slide style reference",
+          "fidelity": "match palette, typography mood, density, texture, 2D spec diagram style, and original robot identity; do not copy the exact slide layout unless requested"
+        },
+        {
+          "path": "C:\\yode\\code\\slides\\assets\\mo-reference.png",
+          "fidelity": "style reference only; do not directly copy the referenced movie character, logo, exact proportions, panel shapes, or complete part layout",
+          "role": "broad visual reference for the original compact utility robot character"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "019ef89a-eb37-7102-a57a-bbc8f1c0b7a0",
+        "agent_nickname": "Lovelace",
+        "prompt": "prompts/slide_12.json",
+        "prompt_sha256": "238a13347efb458ee24081f1fba243061efe1b35ca146fddd13fae87a7e24b47",
+        "dispatched_at": "2026-06-24T08:17:59Z"
+      },
+      "result": {
+        "agent_id": "019ef89a-eb37-7102-a57a-bbc8f1c0b7a0",
+        "backend_used": "built-in image tool",
+        "selected_source": "C:\\Users\\yode0\\.codex\\generated_images\\019ef89a-eb37-7102-a57a-bbc8f1c0b7a0\\ig_0eaec6f15daaf1d8016a3b8c20d6b481918689f13d5213c6e4.png",
+        "selected_source_sha256": "f7ac0eb4a95be1b1295bbbb277178da536efed929978676105177fc7e054f460",
+        "final_image": "origin_image/slide_12.png",
+        "final_image_sha256": "f7ac0eb4a95be1b1295bbbb277178da536efed929978676105177fc7e054f460",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Previously generated slide reused; content unchanged for this revision.",
+        "recorded_at": "2026-06-24T08:17:59Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_13",
+      "number": 13,
+      "title": "建議三：給予明確的互動引導",
+      "job": "prompts/slide_13.json",
+      "out": "origin_image/slide_13.png",
+      "input_images": [
+        {
+          "path": "C:\\yode\\code\\slides\\AI-humanlike-interaction-guide\\origin_image\\slide_13.png",
+          "role": "approved sample slide style reference",
+          "fidelity": "match palette, typography mood, density, texture, 2D spec diagram style, and original robot identity; do not copy the exact slide layout unless requested"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "accepted",
+      "dispatch": null,
+      "result": {
+        "final_image": "origin_image/slide_13.png",
+        "accepted_sample": true
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_14",
+      "number": 14,
+      "title": "建議四：真的需要人性化嗎？",
+      "job": "prompts/slide_14.json",
+      "out": "origin_image/slide_14.png",
+      "input_images": [
+        {
+          "path": "C:\\yode\\code\\slides\\AI-humanlike-interaction-guide\\origin_image\\slide_13.png",
+          "role": "approved sample slide style reference",
+          "fidelity": "match palette, typography mood, density, texture, 2D spec diagram style, and original robot identity; do not copy the exact slide layout unless requested"
+        },
+        {
+          "path": "C:\\yode\\code\\slides\\assets\\mo-reference.png",
+          "fidelity": "style reference only; do not directly copy the referenced movie character, logo, exact proportions, panel shapes, or complete part layout",
+          "role": "broad visual reference for the original compact utility robot character"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "019ef8b3-c2e2-7a73-90fa-889deae51907",
+        "agent_nickname": "Mill",
+        "prompt": "prompts/slide_14.json",
+        "prompt_sha256": "e8bfef7a45376fd7d5f02fed9d8ea30274a641250b2afd93556eaeb8f60317b2",
+        "dispatched_at": "2026-06-24T08:17:03Z"
+      },
+      "result": {
+        "agent_id": "019ef8b3-c2e2-7a73-90fa-889deae51907",
+        "backend_used": "built-in image tool",
+        "selected_source": "C:\\Users\\yode0\\.codex\\generated_images\\019ef8b3-c2e2-7a73-90fa-889deae51907\\ig_08a7bd6dc8e9ceec016a3b928029048196a3c0100c89add16b.png",
+        "selected_source_sha256": "77f77ebac295b77a38fa6010ddb9d236b72480cad1dfac7b16c75630c4a9a75e",
+        "final_image": "origin_image/slide_14.png",
+        "final_image_sha256": "77f77ebac295b77a38fa6010ddb9d236b72480cad1dfac7b16c75630c4a9a75e",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Decision-gate/funnel layout replaces the previous matrix; required Traditional Chinese labels are readable and style matches the approved sample.",
+        "recorded_at": "2026-06-24T08:20:57Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_15",
+      "number": 15,
+      "title": "結語與帶走原則",
+      "job": "prompts/slide_15.json",
+      "out": "origin_image/slide_15.png",
+      "input_images": [
+        {
+          "path": "C:\\yode\\code\\slides\\AI-humanlike-interaction-guide\\origin_image\\slide_13.png",
+          "role": "approved sample slide style reference",
+          "fidelity": "match palette, typography mood, density, texture, 2D spec diagram style, and original robot identity; do not copy the exact slide layout unless requested"
+        },
+        {
+          "path": "C:\\yode\\code\\slides\\assets\\mo-reference.png",
+          "fidelity": "style reference only; do not directly copy the referenced movie character, logo, exact proportions, panel shapes, or complete part layout",
+          "role": "broad visual reference for the original compact utility robot character"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "019ef8b3-f7bc-7e63-8cc3-29c30e425671",
+        "agent_nickname": "Volta",
+        "prompt": "prompts/slide_15.json",
+        "prompt_sha256": "64cd57887b295011e8419229315fd6675092b4c6bbdaa442acb0161bd0a4e70a",
+        "dispatched_at": "2026-06-24T08:16:59Z"
+      },
+      "result": {
+        "agent_id": "019ef8b3-f7bc-7e63-8cc3-29c30e425671",
+        "backend_used": "built-in image tool",
+        "selected_source": "C:\\Users\\yode0\\.codex\\generated_images\\019ef8b3-f7bc-7e63-8cc3-29c30e425671\\ig_0bf8dbbb54562943016a3b9316f30c8197b75fcf301e542fdf.png",
+        "selected_source_sha256": "7d26860bec65a0ba184fc10fad6383a869bc20d04bb2e1a1df537b83b4ec44f0",
+        "final_image": "origin_image/slide_15.png",
+        "final_image_sha256": "7d26860bec65a0ba184fc10fad6383a869bc20d04bb2e1a1df537b83b4ec44f0",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Title is exactly 結語與帶走原則 with no 心法; three takeaway principles are readable and style matches approved sample.",
+        "recorded_at": "2026-06-24T08:21:58Z"
+      },
+      "blocker": null
+    }
+  ],
+  "updated_at": "2026-06-24T08:21:58Z"
+}

@@ -1,0 +1,544 @@
+{
+    "deck_name":  "AI-humanlike-interaction-guide",
+    "language":  "Traditional Chinese",
+    "goal":  "Explain Google PAIR guidance on human-like AI interaction, risks of anthropomorphism/humanization, and practical design recommendations for AI product teams.",
+    "selected_image_backend":  "built-in image tool",
+    "max_concurrent_slides":  6,
+    "deck_context":  {
+                         "source_summary":  "The deck explains how people naturally anthropomorphize AI, how intentionally humanized interfaces can create inaccurate expectations, and how designers can disclose AI identity, calibrate trust, guide interaction, and decide when human-likeness is actually useful.",
+                         "core_claim":  "AI should not become more human-like by default. Human-like cues should be used with restraint and only when they help users complete the task while preserving an accurate mental model.",
+                         "content_sources":  [
+                                                 "source/AI 越像人越好嗎？人機互動設計指南.md",
+                                                 "source/pair-account-for-human-like-interaction-bilingual.md",
+                                                 "source/style-guide.md"
+                                             ],
+                         "canonical_terms":  [
+                                                 "擬人化（Anthropomorphization）：人類將能動性、意圖、人格、感知或社交性投射到非人類系統上的預設認知傾向。",
+                                                 "人類化（Humanization）：設計者刻意把人類特徵加入非人類系統，例如人聲、寒暄、停頓、人類身份或角色化人格。",
+                                                 "具身 AI（Embodied AI）：能在實體或虛擬環境中互動並從環境學習的 AI 系統。",
+                                                 "心智模型：使用者用來預測系統行為的簡化理解；能運作不代表準確。",
+                                                 "互動引導：Input templates, Clarifications, Obstacles, Pointers, Acknowledgement。"
+                                             ],
+                         "robot_character":  "Use one consistent original compact utility robot across the deck: warm-white matte protective shell, dark horizontal sensor visor, two yellow pixel-like eyes, compact wheeled base, subtle panel lines, no mouth, no eyebrows, no human face, no humanoid body, no five-finger hands. Use the provided robot reference only for broad traits and the approved sample slide as the stronger style reference."
+                     },
+    "sample_generation_method":  {
+                                     "backend_used":  "built-in image tool",
+                                     "tool_name":  "image_gen",
+                                     "mode":  "generate",
+                                     "prompt_source":  "AI-humanlike-interaction-guide/slide_13_sample_prompt.draft.txt plus user-provided robot reference image in conversation",
+                                     "size":  "16:9 landscape",
+                                     "quality":  "built-in default",
+                                     "approved_sample_path":  "origin_image/slide_13.png",
+                                     "input_context_preparation":  "The robot reference image was uploaded directly in the conversation; the approved slide_13.png was generated with built-in image_gen using that visible reference image.",
+                                     "handoff_rule":  "Use the built-in image tool and the same visual rules; use the approved sample slide as style reference and the robot reference as broad character reference. Return a blocker if the built-in image tool or required images are unavailable."
+                                 },
+    "approved_style_reference":  {
+                                     "path":  "origin_image/slide_13.png",
+                                     "role":  "approved sample slide style reference",
+                                     "fidelity":  "match palette, typography mood, density, texture, 2D spec diagram style, and original robot identity; do not copy the exact slide layout unless requested"
+                                 },
+    "style":  {
+                  "name":  "UX technical guide with original compact robot",
+                  "visual_direction":  "Bright polished UX/HCI presentation. Combine clean 2D technical spec diagrams with matte 3D clay-like rendering of one consistent compact utility robot character.",
+                  "color_palette":  "#F8FAFC background, #FFFFFF cards, #1F2937 main text, #667085 secondary text, #B8C2CC technical lines, #FFD84D robot attention, #4DA3FF AI/system flow, #FFB38A human social expectation, #F59B9B risk/mismatch, #7BC8A4 correct interaction.",
+                  "typography":  "Large readable Traditional Chinese titles in a Manrope/Noto Sans TC-like geometric sans style; compact body text in Inter/Noto Sans TC-like sans; mono labels only for short English status tags.",
+                  "texture_and_finish":  "Clean studio lighting, pale neutral background, restrained depth, soft ambient shadows, matte product rendering, crisp 2D diagrams.",
+                  "deck_consistency":  "Keep one visual identity across all slides. Vary compositions by slide role. Do not repeat the same three-card layout. Keep at least 35-40% whitespace and one main visual focus."
+              },
+    "slides":  [
+                   {
+                       "number":  1,
+                       "title":  "AI 越像人越好嗎？",
+                       "role":  "cover",
+                       "intent":  "Open with the central question and frame expectation gaps.",
+                       "key_points":  [
+                                          "探討類人化互動帶來的期待落差",
+                                          "從 People + AI Guidebook 提煉設計解方"
+                                      ],
+                       "local_context":  {
+                                             "required_background":  "Opening slide. The question is not anti-AI; it asks whether human-like cues should be used with design restraint."
+                                         },
+                       "layout":  {
+                                      "composition":  "Large whitespace cover; title on left/top, subtitle beneath, robot and abstract human silhouette observing each other on the right; minimal spec tags around the relationship.",
+                                      "relationship_to_previous_slide":  "opening"
+                                  },
+                       "visual_elements":  {
+                                               "main_visual":  "Original compact robot and simplified human outline in an observation relationship",
+                                               "supporting_elements":  "Tiny spec tags: human-like, trust, expectation"
+                                           },
+                       "constraints":  [
+                                           "No page number",
+                                           "Do not use a dark sci-fi or cyberpunk background",
+                                           "Keep text sparse and premium"
+                                       ],
+                       "required_images":  [
+                                               {
+                                                   "path":  "..\\assets\\mo-reference.png",
+                                                   "fidelity":  "style reference only; do not directly copy the referenced movie character, logo, exact proportions, panel shapes, or complete part layout",
+                                                   "role":  "broad visual reference for the original compact utility robot character"
+                                               }
+                                           ]
+                   },
+                   {
+                       "number":  2,
+                       "title":  "今天會聊些什麼？",
+                       "role":  "agenda / deck map",
+                       "intent":  "Preview the three-part narrative: phenomenon, risks, design solutions.",
+                       "key_points":  [
+                                          "大腦為何把 AI 當人",
+                                          "AI 太像人的四大風險",
+                                          "實際設計解方"
+                                      ],
+                       "local_context":  {
+                                             "required_background":  "This slide should orient the audience to the full deck path without adding new concepts."
+                                         },
+                       "layout":  {
+                                      "composition":  "Three connected signal paths across the canvas, each path has one short label and a different robot pose moving forward",
+                                      "relationship_to_previous_slide":  "expands from cover question into route map"
+                                  },
+                       "visual_elements":  {
+                                               "main_visual":  "Signal route map with three sections",
+                                               "supporting_elements":  "Blue system flow, orange expectation, green solution accents"
+                                           },
+                       "constraints":  [
+                                           "Do not repeat the same robot pose three times",
+                                           "Keep labels short and legible"
+                                       ],
+                       "required_images":  [
+                                               {
+                                                   "path":  "..\\assets\\mo-reference.png",
+                                                   "fidelity":  "style reference only; do not directly copy the referenced movie character, logo, exact proportions, panel shapes, or complete part layout",
+                                                   "role":  "broad visual reference for the original compact utility robot character"
+                                               }
+                                           ]
+                   },
+                   {
+                       "number":  3,
+                       "title":  "從一個日常小現象說起",
+                       "role":  "story / context",
+                       "intent":  "Use a relatable example to show automatic social response to AI.",
+                       "key_points":  [
+                                          "聽到語音助理回覆後，我們常下意識說謝謝",
+                                          "理智知道它是程式，互動當下卻像在回應社交對象"
+                                      ],
+                       "local_context":  {
+                                             "required_background":  "PAIR source says people respond to social cues from AI with human-to-human social behaviors, such as saying thank you to a voice assistant."
+                                         },
+                       "layout":  {
+                                      "composition":  "Single everyday scene with user-side abstract silhouette and small robot/voice device; two technical labels compare rational cognition and automatic response",
+                                      "relationship_to_previous_slide":  "zooms into the first agenda item with a concrete example"
+                                  },
+                       "visual_elements":  {
+                                               "main_visual":  "User thanks a voice assistant or robot device",
+                                               "supporting_elements":  "Labels: 理性認知：這是程式; 自動反應：把它當社交對象"
+                                           },
+                       "constraints":  [
+                                           "Let the situation be understood visually",
+                                           "No realistic human face"
+                                       ],
+                       "required_images":  [
+                                               {
+                                                   "path":  "..\\assets\\mo-reference.png",
+                                                   "fidelity":  "style reference only; do not directly copy the referenced movie character, logo, exact proportions, panel shapes, or complete part layout",
+                                                   "role":  "broad visual reference for the original compact utility robot character"
+                                               }
+                                           ]
+                   },
+                   {
+                       "number":  4,
+                       "title":  "本能 vs. 設計",
+                       "role":  "concept comparison",
+                       "intent":  "Clearly distinguish anthropomorphization from humanization.",
+                       "key_points":  [
+                                          "擬人化（Anthropomorphization）：大腦的本能",
+                                          "人類化（Humanization）：刻意加入人類特徵的設計選擇",
+                                          "混淆兩者，期待就容易被拉高"
+                                      ],
+                       "local_context":  {
+                                             "required_background":  "Anthropomorphization is ascribing human traits to non-human entities by default. Humanization is intentionally adding human-like traits such as facial features, human identity, phatic responses, pauses, or language generation."
+                                         },
+                       "layout":  {
+                                      "composition":  "Left-right contrast with robot in the center. Left shows human projection / automatic cognitive shortcut; right shows design controls adding voice, tone, or human-like cues",
+                                      "relationship_to_previous_slide":  "abstracts the story example into definitions"
+                                  },
+                       "visual_elements":  {
+                                               "main_visual":  "Two-sided comparison diagram",
+                                               "supporting_elements":  "Short English parentheticals in the key labels"
+                                           },
+                       "constraints":  [
+                                           "Make the two English terms readable",
+                                           "Avoid generic two-card look by using central robot and connecting lines"
+                                       ],
+                       "required_images":  [
+                                               {
+                                                   "path":  "..\\assets\\mo-reference.png",
+                                                   "fidelity":  "style reference only; do not directly copy the referenced movie character, logo, exact proportions, panel shapes, or complete part layout",
+                                                   "role":  "broad visual reference for the original compact utility robot character"
+                                               }
+                                           ]
+                   },
+                   {
+                       "number":  5,
+                       "title":  "當 AI 擁有身體",
+                       "role":  "concept explanation",
+                       "intent":  "Explain why embodied AI amplifies projection through spatial presence.",
+                       "key_points":  [
+                                          "具身 AI 會佔據實體或視覺空間",
+                                          "移動、距離與視線會觸發更強的能動性感知",
+                                          "投射效應比單純語音更容易放大"
+                                      ],
+                       "local_context":  {
+                                             "required_background":  "Embodied AI interacts physically in virtual or real environments and learns from environmental interaction. Spatial presence can intensify human perception of agency."
+                                         },
+                       "layout":  {
+                                      "composition":  "Spatial perception diagram with movement path, attention cone, distance rings, and robot moving through the scene",
+                                      "relationship_to_previous_slide":  "extends human-like cues into physical/visual space"
+                                  },
+                       "visual_elements":  {
+                                               "main_visual":  "Robot trajectory through space with human attention tracking",
+                                               "supporting_elements":  "Distance rings and perception labels"
+                                           },
+                       "constraints":  [
+                                           "Use space and motion as information, not decorative HUD",
+                                           "Keep background pale"
+                                       ],
+                       "required_images":  [
+                                               {
+                                                   "path":  "..\\assets\\mo-reference.png",
+                                                   "fidelity":  "style reference only; do not directly copy the referenced movie character, logo, exact proportions, panel shapes, or complete part layout",
+                                                   "role":  "broad visual reference for the original compact utility robot character"
+                                               }
+                                           ]
+                   },
+                   {
+                       "number":  6,
+                       "title":  "心理模型與期待落差",
+                       "role":  "concept explanation",
+                       "intent":  "Show that convenient mental models are not always accurate mental models.",
+                       "key_points":  [
+                                          "人會套用人類社交規則來理解 AI",
+                                          "AI 實際靠特徵、像素與信心分數運作",
+                                          "期待落差會讓人誤以為產品壞了"
+                                      ],
+                       "local_context":  {
+                                             "required_background":  "PAIR source uses Smart Photo Tagging: users expect it to recognize friends from multiple angles like a person, but the tool may miss a back-view photo because it operates differently from human recognition."
+                                         },
+                       "layout":  {
+                                      "composition":  "Two-layer diagram: top layer human social mental model; bottom layer AI feature recognition pipeline; small mismatch gap between them",
+                                      "relationship_to_previous_slide":  "turns embodiment/projection into a model mismatch"
+                                  },
+                       "visual_elements":  {
+                                               "main_visual":  "Human expectation vs AI operation diagram",
+                                               "supporting_elements":  "Face recognized / back view missed example with minimal labels"
+                                           },
+                       "constraints":  [
+                                           "Avoid too much small text",
+                                           "Make the gap visually obvious"
+                                       ],
+                       "required_images":  [
+                                               {
+                                                   "path":  "..\\assets\\mo-reference.png",
+                                                   "fidelity":  "style reference only; do not directly copy the referenced movie character, logo, exact proportions, panel shapes, or complete part layout",
+                                                   "role":  "broad visual reference for the original compact utility robot character"
+                                               }
+                                           ]
+                   },
+                   {
+                       "number":  7,
+                       "title":  "風險一：拿 AI 跟人比較",
+                       "role":  "risk series",
+                       "intent":  "Introduce the first risk: subjective comparison and unstable trust.",
+                       "key_points":  [
+                                          "生成式 AI 很容易被拿來和人類專家比較",
+                                          "一開始像人一樣流暢，容易被過度信任",
+                                          "一個低階錯誤又會讓信任快速崩落"
+                                      ],
+                       "local_context":  {
+                                             "required_background":  "PAIR source: Generative AI outputs are compared to users\u0027 own capabilities and to more competent people, making product evaluation subjective and challenging."
+                                         },
+                       "layout":  {
+                                      "composition":  "Trust curve rises smoothly then drops sharply; Situation and Impact labels placed around the curve; robot near the drop point in caution state",
+                                      "relationship_to_previous_slide":  "starts the four-risk sequence"
+                                  },
+                       "visual_elements":  {
+                                               "main_visual":  "Trust curve with sudden drop",
+                                               "supporting_elements":  "Situation / Impact labels"
+                                           },
+                       "constraints":  [
+                                           "Use risk pink sparingly",
+                                           "Do not make the slide feel alarming or sensational"
+                                       ],
+                       "required_images":  [
+                                               {
+                                                   "path":  "..\\assets\\mo-reference.png",
+                                                   "fidelity":  "style reference only; do not directly copy the referenced movie character, logo, exact proportions, panel shapes, or complete part layout",
+                                                   "role":  "broad visual reference for the original compact utility robot character"
+                                               }
+                                           ]
+                   },
+                   {
+                       "number":  8,
+                       "title":  "風險二：界線模糊",
+                       "role":  "risk series",
+                       "intent":  "Show how unclear limits create distrust and suspicion of agency.",
+                       "key_points":  [
+                                          "通用助手 AI 如果沒有明確限制，使用者會不知道它不能做什麼",
+                                          "暗示能動性卻沒有原則，會讓人懷疑系統動機",
+                                          "界線清楚，信任才有基礎"
+                                      ],
+                       "local_context":  {
+                                             "required_background":  "PAIR source: The risk of mistrust is high when a generalized helper AI suggests agency without clear principles or clear restricted tasks/actions."
+                                         },
+                       "layout":  {
+                                      "composition":  "Capability boundary map with a clean known area, a fading uncertain area, and robot standing beside a broken boundary line",
+                                      "relationship_to_previous_slide":  "same risk-series identity, different map composition"
+                                  },
+                       "visual_elements":  {
+                                               "main_visual":  "Fading capability boundary",
+                                               "supporting_elements":  "Known / unclear / restricted labels"
+                                           },
+                       "constraints":  [
+                                           "Keep the boundary readable",
+                                           "Do not use a three-card grid"
+                                       ],
+                       "required_images":  [
+                                               {
+                                                   "path":  "..\\assets\\mo-reference.png",
+                                                   "fidelity":  "style reference only; do not directly copy the referenced movie character, logo, exact proportions, panel shapes, or complete part layout",
+                                                   "role":  "broad visual reference for the original compact utility robot character"
+                                               }
+                                           ]
+                   },
+                   {
+                       "number":  9,
+                       "title":  "風險三：過度依賴與隱私危機",
+                       "role":  "risk series",
+                       "intent":  "Show that perceived empathy may lead users to reveal too much or rely too much.",
+                       "key_points":  [
+                                          "當 AI 讓人覺得它懂我，使用者可能提供更多私密脈絡",
+                                          "資料如何保存與使用，使用者未必清楚",
+                                          "AI 不應取代合格專業協助"
+                                      ],
+                       "local_context":  {
+                                             "required_background":  "PAIR source: When users attribute human-like capabilities to AI, they may disclose more information and over-rely on it in place of qualified professional help."
+                                         },
+                       "layout":  {
+                                      "composition":  "Private information stream flows from user side toward AI; robot puts up a gentle warning/barrier and a visible privacy boundary",
+                                      "relationship_to_previous_slide":  "continues risk sequence with privacy flow visual"
+                                  },
+                       "visual_elements":  {
+                                               "main_visual":  "Sensitive data flow and boundary",
+                                               "supporting_elements":  "Privacy risk label and small warning state"
+                                           },
+                       "constraints":  [
+                                           "No scary imagery",
+                                           "Do not show real personal data"
+                                       ],
+                       "required_images":  [
+                                               {
+                                                   "path":  "..\\assets\\mo-reference.png",
+                                                   "fidelity":  "style reference only; do not directly copy the referenced movie character, logo, exact proportions, panel shapes, or complete part layout",
+                                                   "role":  "broad visual reference for the original compact utility robot character"
+                                               }
+                                           ]
+                   },
+                   {
+                       "number":  10,
+                       "title":  "風險四：專業工具反效果",
+                       "role":  "risk series / comparison",
+                       "intent":  "Explain that human-like uncertainty can undermine expert tool confidence.",
+                       "key_points":  [
+                                          "類人的猶豫語氣在日常情境可能顯得親切",
+                                          "在醫療或金融等專業工具中，卻可能暗示不可靠",
+                                          "人類化必須符合任務場景"
+                                      ],
+                       "local_context":  {
+                                             "required_background":  "PAIR source: Adding anthropomorphic cues to expert or professional AI tools can make experts underestimate capability, perceive lower controllability, and lose confidence in outcomes."
+                                         },
+                       "layout":  {
+                                      "composition":  "Two-context comparison: casual context on left, professional high-stakes tool on right; robot posture shifts from approachable to constrained/systemic",
+                                      "relationship_to_previous_slide":  "closes risk sequence with domain tradeoff"
+                                  },
+                       "visual_elements":  {
+                                               "main_visual":  "Casual vs professional context contrast",
+                                               "supporting_elements":  "Small quote-like uncertainty cue: 我不確定，但..."
+                                           },
+                       "constraints":  [
+                                           "Keep high-stakes examples abstract",
+                                           "No hospital gore or financial brand logos"
+                                       ],
+                       "required_images":  [
+                                               {
+                                                   "path":  "..\\assets\\mo-reference.png",
+                                                   "fidelity":  "style reference only; do not directly copy the referenced movie character, logo, exact proportions, panel shapes, or complete part layout",
+                                                   "role":  "broad visual reference for the original compact utility robot character"
+                                               }
+                                           ]
+                   },
+                   {
+                       "number":  11,
+                       "title":  "建議一：承認我是 AI",
+                       "role":  "design recommendation",
+                       "intent":  "Start solution section with disclosure and safety boundary.",
+                       "key_points":  [
+                                          "明確揭露產品由 AI 驅動，不是真人",
+                                          "表達方式要讓不同年齡與技術素養的人都能理解",
+                                          "先建立安全邊界，再談親切互動"
+                                      ],
+                       "local_context":  {
+                                             "required_background":  "PAIR source: It is critical to disclose when a product is AI-powered and explicitly state it is not human in an accessible way."
+                                         },
+                       "layout":  {
+                                      "composition":  "Robot displays an AI SYSTEM identity label inside a clean interface disclosure panel; shift palette from risk to blue/green",
+                                      "relationship_to_previous_slide":  "turns from risks into recommendations"
+                                  },
+                       "visual_elements":  {
+                                               "main_visual":  "AI identity disclosure interface",
+                                               "supporting_elements":  "AI SYSTEM tag and safety boundary line"
+                                           },
+                       "constraints":  [
+                                           "Keep disclosure text short and readable",
+                                           "Use solution tone, not warning tone"
+                                       ],
+                       "required_images":  [
+                                               {
+                                                   "path":  "..\\assets\\mo-reference.png",
+                                                   "fidelity":  "style reference only; do not directly copy the referenced movie character, logo, exact proportions, panel shapes, or complete part layout",
+                                                   "role":  "broad visual reference for the original compact utility robot character"
+                                               }
+                                           ]
+                   },
+                   {
+                       "number":  12,
+                       "title":  "建議二：讓使用者自己驗證",
+                       "role":  "design recommendation / process",
+                       "intent":  "Show trust calibration through inspectable outputs and sources.",
+                       "key_points":  [
+                                          "不要把 AI 輸出包裝成單一絕對答案",
+                                          "提供來源、事實或多元觀點",
+                                          "讓使用者自己判斷可採信程度"
+                                      ],
+                       "local_context":  {
+                                             "required_background":  "PAIR source recommends offering cues so users can decide how much to trust AI outputs, and presenting outcomes as curated/ranked viewpoints with citations, attributions, or verifiable facts."
+                                         },
+                       "layout":  {
+                                      "composition":  "Verification loop: AI output -\u003e sources/facts -\u003e user judgment -\u003e calibrated trust; robot presents options rather than a final expert opinion",
+                                      "relationship_to_previous_slide":  "second recommendation, process layout"
+                                  },
+                       "visual_elements":  {
+                                               "main_visual":  "Trust calibration loop",
+                                               "supporting_elements":  "Source chips and check path"
+                                           },
+                       "constraints":  [
+                                           "Do not create dense fake citations",
+                                           "Use short labels only"
+                                       ],
+                       "required_images":  [
+                                               {
+                                                   "path":  "..\\assets\\mo-reference.png",
+                                                   "fidelity":  "style reference only; do not directly copy the referenced movie character, logo, exact proportions, panel shapes, or complete part layout",
+                                                   "role":  "broad visual reference for the original compact utility robot character"
+                                               }
+                                           ]
+                   },
+                   {
+                       "number":  13,
+                       "title":  "建議三：給予明確的互動引導",
+                       "role":  "design recommendation / approved sample",
+                       "intent":  "Approved sample slide; keep final image and do not regenerate unless explicitly requested.",
+                       "sample_approved":  true,
+                       "key_points":  [
+                                          "輸入範本示範如何提出請求",
+                                          "輸入模糊時，主動澄清而不是猜測",
+                                          "停下來詢問，等於把控制權交還使用者"
+                                      ],
+                       "local_context":  {
+                                             "required_background":  "PAIR source: In multi-turn experiences, offer interaction cues. Input templates show how to formulate an input; Clarifications ask questions or suggest additions when input is underspecified."
+                                         },
+                       "layout":  {
+                                      "composition":  "Use the already approved sample slide image at origin_image/slide_13.png",
+                                      "relationship_to_previous_slide":  "approved style anchor"
+                                  },
+                       "visual_elements":  {
+                                               "main_visual":  "Approved sample: ambiguous input branches into A/B and robot asks a clarification question",
+                                               "supporting_elements":  "INPUT TEMPLATE, CLARIFY, USER CONTROL labels"
+                                           },
+                       "constraints":  [
+                                           "Do not regenerate this slide during full-deck generation"
+                                       ]
+                   },
+                   {
+                       "number":  14,
+                       "title":  "建議四：真的需要人性化嗎？",
+                       "role":  "design recommendation / decision gate",
+                       "intent":  "Help designers decide whether humanization is actually needed, directly answering the title question instead of optimizing a humanization matrix.",
+                       "key_points":  [
+                                          "不是每個 AI 系統都需要人性化。",
+                                          "先問：它是否幫助使用者完成目標？",
+                                          "再問：AI 能力是否撐得起使用者期待？",
+                                          "最後問：這些人性化線索會不會分心或誤導？",
+                                          "如果答案不明確，就先不要加。"
+                                      ],
+                       "local_context":  {
+                                             "required_background":  "PAIR source: Not all AI-powered systems need to be human-like. Consider whether the use case requires humanization. If humanization significantly helps users make progress toward goals, choose the level based on how well AI capabilities match users\u0027 perceptions of what a human can do. Humanizing expert tools can create incorrect assumptions about competence, performance, and utility. In cognitively demanding tasks, anthropomorphic cues can be distracting. Humanization is the sum of many UI and interaction decisions; consider whether those cues change user behavior and detract from goals."
+                                         },
+                       "layout":  {
+                                      "composition":  "Decision-gate / funnel flow, not a matrix. Start from 想加入人性化線索, pass through three gates: 有助任務？ / 能力匹配期待？ / 不會造成誤導？. End in two clear outcomes: green path 加入，但保持揭露與邊界; grey path 不加入，維持工具感. Include a final bottom callout: 如果答案不明確，就先不要加。",
+                                      "relationship_to_previous_slide":  "continues recommendation section by turning the title question into a practical decision flow"
+                                  },
+                       "visual_elements":  {
+                                               "main_visual":  "Humanization decision gate / funnel that helps decide whether humanization is truly needed",
+                                               "supporting_elements":  "Robot as a design reviewer beside the gates; green pass path, grey hold path, small boundary/disclosure marker near the green outcome"
+                                           },
+                       "constraints":  [
+                                           "Do not use a 2x2 matrix",
+                                           "Do not imply the guide recommends a matrix",
+                                           "Make the title and gate labels large and readable",
+                                           "Directly answer whether humanization is needed",
+                                           "Keep text concise and correctly rendered in Traditional Chinese"
+                                       ],
+                       "required_images":  [
+                                               {
+                                                   "path":  "..\\assets\\mo-reference.png",
+                                                   "fidelity":  "style reference only; do not directly copy the referenced movie character, logo, exact proportions, panel shapes, or complete part layout",
+                                                   "role":  "broad visual reference for the original compact utility robot character"
+                                               }
+                                           ]
+                   },
+                   {
+                       "number":  15,
+                       "title":  "結語與帶走原則",
+                       "role":  "closing summary",
+                       "intent":  "End with the principle of restrained design.",
+                       "key_points":  [
+                                          "最好的設計往往帶有一種克制。",
+                                          "明確揭露 AI 身分。",
+                                          "校準信任與能力期待。",
+                                          "只有在有助任務時才加入人性化。"
+                                      ],
+                       "local_context":  {
+                                             "required_background":  "Closing should reinforce that AI is a useful tool, not a person to imitate at all costs. Use the title 結語與帶走原則, with no 心法 in the slide title."
+                                         },
+                       "layout":  {
+                                      "composition":  "Three takeaway principles with generous whitespace; robot beside a clean interface as a reliable tool, not pretending to be human",
+                                      "relationship_to_previous_slide":  "wraps recommendations into final takeaway"
+                                  },
+                       "visual_elements":  {
+                                               "main_visual":  "Reliable tool posture and three takeaway principles",
+                                               "supporting_elements":  "Subtle green completion path"
+                                           },
+                       "constraints":  [
+                                           "No new complex concept",
+                                           "Calm concise ending",
+                                           "Do not use the word 心法 in the title"
+                                       ],
+                       "required_images":  [
+                                               {
+                                                   "path":  "..\\assets\\mo-reference.png",
+                                                   "fidelity":  "style reference only; do not directly copy the referenced movie character, logo, exact proportions, panel shapes, or complete part layout",
+                                                   "role":  "broad visual reference for the original compact utility robot character"
+                                               }
+                                           ]
+                   }
+               ]
+}

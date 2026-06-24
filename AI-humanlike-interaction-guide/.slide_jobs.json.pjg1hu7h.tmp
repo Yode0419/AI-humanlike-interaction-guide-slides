@@ -1,0 +1,308 @@
+{
+  "run_status": "jobs_prepared",
+  "deck_name": "AI-humanlike-interaction-guide",
+  "selected_backend": "built-in image tool",
+  "sample_generation_method": {
+    "backend_used": "built-in image tool",
+    "tool_name": "image_gen",
+    "mode": "generate",
+    "prompt_source": "AI-humanlike-interaction-guide/slide_13_sample_prompt.draft.txt plus user-provided robot reference image in conversation",
+    "size": "16:9 landscape",
+    "quality": "built-in default",
+    "approved_sample_path": "C:\\yode\\code\\slides\\AI-humanlike-interaction-guide\\origin_image\\slide_13.png",
+    "input_context_preparation": "The robot reference image was uploaded directly in the conversation; the approved slide_13.png was generated with built-in image_gen using that visible reference image.",
+    "handoff_rule": "Use the built-in image tool and the same visual rules; use the approved sample slide as style reference and the robot reference as broad character reference. Return a blocker if the built-in image tool or required images are unavailable."
+  },
+  "max_concurrent_slides": 6,
+  "slides": [
+    {
+      "slide_id": "slide_01",
+      "number": 1,
+      "title": "AI 越像人越好嗎？",
+      "job": "prompts/slide_01.json",
+      "out": "origin_image/slide_01.png",
+      "input_images": [
+        {
+          "path": "C:\\yode\\code\\slides\\AI-humanlike-interaction-guide\\origin_image\\slide_13.png",
+          "role": "approved sample slide style reference",
+          "fidelity": "match palette, typography mood, density, texture, 2D spec diagram style, and original robot identity; do not copy the exact slide layout unless requested"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "pending",
+      "dispatch": null,
+      "result": null,
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_02",
+      "number": 2,
+      "title": "今天會聊些什麼？",
+      "job": "prompts/slide_02.json",
+      "out": "origin_image/slide_02.png",
+      "input_images": [
+        {
+          "path": "C:\\yode\\code\\slides\\AI-humanlike-interaction-guide\\origin_image\\slide_13.png",
+          "role": "approved sample slide style reference",
+          "fidelity": "match palette, typography mood, density, texture, 2D spec diagram style, and original robot identity; do not copy the exact slide layout unless requested"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "pending",
+      "dispatch": null,
+      "result": null,
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_03",
+      "number": 3,
+      "title": "從一個日常小現象說起",
+      "job": "prompts/slide_03.json",
+      "out": "origin_image/slide_03.png",
+      "input_images": [
+        {
+          "path": "C:\\yode\\code\\slides\\AI-humanlike-interaction-guide\\origin_image\\slide_13.png",
+          "role": "approved sample slide style reference",
+          "fidelity": "match palette, typography mood, density, texture, 2D spec diagram style, and original robot identity; do not copy the exact slide layout unless requested"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "pending",
+      "dispatch": null,
+      "result": null,
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_04",
+      "number": 4,
+      "title": "本能 vs. 設計",
+      "job": "prompts/slide_04.json",
+      "out": "origin_image/slide_04.png",
+      "input_images": [
+        {
+          "path": "C:\\yode\\code\\slides\\AI-humanlike-interaction-guide\\origin_image\\slide_13.png",
+          "role": "approved sample slide style reference",
+          "fidelity": "match palette, typography mood, density, texture, 2D spec diagram style, and original robot identity; do not copy the exact slide layout unless requested"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "pending",
+      "dispatch": null,
+      "result": null,
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_05",
+      "number": 5,
+      "title": "當 AI 擁有身體",
+      "job": "prompts/slide_05.json",
+      "out": "origin_image/slide_05.png",
+      "input_images": [
+        {
+          "path": "C:\\yode\\code\\slides\\AI-humanlike-interaction-guide\\origin_image\\slide_13.png",
+          "role": "approved sample slide style reference",
+          "fidelity": "match palette, typography mood, density, texture, 2D spec diagram style, and original robot identity; do not copy the exact slide layout unless requested"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "pending",
+      "dispatch": null,
+      "result": null,
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_06",
+      "number": 6,
+      "title": "心理模型與期待落差",
+      "job": "prompts/slide_06.json",
+      "out": "origin_image/slide_06.png",
+      "input_images": [
+        {
+          "path": "C:\\yode\\code\\slides\\AI-humanlike-interaction-guide\\origin_image\\slide_13.png",
+          "role": "approved sample slide style reference",
+          "fidelity": "match palette, typography mood, density, texture, 2D spec diagram style, and original robot identity; do not copy the exact slide layout unless requested"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "pending",
+      "dispatch": null,
+      "result": null,
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_07",
+      "number": 7,
+      "title": "風險一：拿 AI 跟人比較",
+      "job": "prompts/slide_07.json",
+      "out": "origin_image/slide_07.png",
+      "input_images": [
+        {
+          "path": "C:\\yode\\code\\slides\\AI-humanlike-interaction-guide\\origin_image\\slide_13.png",
+          "role": "approved sample slide style reference",
+          "fidelity": "match palette, typography mood, density, texture, 2D spec diagram style, and original robot identity; do not copy the exact slide layout unless requested"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "pending",
+      "dispatch": null,
+      "result": null,
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_08",
+      "number": 8,
+      "title": "風險二：界線模糊",
+      "job": "prompts/slide_08.json",
+      "out": "origin_image/slide_08.png",
+      "input_images": [
+        {
+          "path": "C:\\yode\\code\\slides\\AI-humanlike-interaction-guide\\origin_image\\slide_13.png",
+          "role": "approved sample slide style reference",
+          "fidelity": "match palette, typography mood, density, texture, 2D spec diagram style, and original robot identity; do not copy the exact slide layout unless requested"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "pending",
+      "dispatch": null,
+      "result": null,
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_09",
+      "number": 9,
+      "title": "風險三：過度依賴與隱私危機",
+      "job": "prompts/slide_09.json",
+      "out": "origin_image/slide_09.png",
+      "input_images": [
+        {
+          "path": "C:\\yode\\code\\slides\\AI-humanlike-interaction-guide\\origin_image\\slide_13.png",
+          "role": "approved sample slide style reference",
+          "fidelity": "match palette, typography mood, density, texture, 2D spec diagram style, and original robot identity; do not copy the exact slide layout unless requested"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "pending",
+      "dispatch": null,
+      "result": null,
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_10",
+      "number": 10,
+      "title": "風險四：專業工具反效果",
+      "job": "prompts/slide_10.json",
+      "out": "origin_image/slide_10.png",
+      "input_images": [
+        {
+          "path": "C:\\yode\\code\\slides\\AI-humanlike-interaction-guide\\origin_image\\slide_13.png",
+          "role": "approved sample slide style reference",
+          "fidelity": "match palette, typography mood, density, texture, 2D spec diagram style, and original robot identity; do not copy the exact slide layout unless requested"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "pending",
+      "dispatch": null,
+      "result": null,
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_11",
+      "number": 11,
+      "title": "建議一：承認我是 AI",
+      "job": "prompts/slide_11.json",
+      "out": "origin_image/slide_11.png",
+      "input_images": [
+        {
+          "path": "C:\\yode\\code\\slides\\AI-humanlike-interaction-guide\\origin_image\\slide_13.png",
+          "role": "approved sample slide style reference",
+          "fidelity": "match palette, typography mood, density, texture, 2D spec diagram style, and original robot identity; do not copy the exact slide layout unless requested"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "pending",
+      "dispatch": null,
+      "result": null,
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_12",
+      "number": 12,
+      "title": "建議二：讓使用者自己驗證",
+      "job": "prompts/slide_12.json",
+      "out": "origin_image/slide_12.png",
+      "input_images": [
+        {
+          "path": "C:\\yode\\code\\slides\\AI-humanlike-interaction-guide\\origin_image\\slide_13.png",
+          "role": "approved sample slide style reference",
+          "fidelity": "match palette, typography mood, density, texture, 2D spec diagram style, and original robot identity; do not copy the exact slide layout unless requested"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "pending",
+      "dispatch": null,
+      "result": null,
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_13",
+      "number": 13,
+      "title": "建議三：給予明確的互動引導",
+      "job": "prompts/slide_13.json",
+      "out": "origin_image/slide_13.png",
+      "input_images": [
+        {
+          "path": "C:\\yode\\code\\slides\\AI-humanlike-interaction-guide\\origin_image\\slide_13.png",
+          "role": "approved sample slide style reference",
+          "fidelity": "match palette, typography mood, density, texture, 2D spec diagram style, and original robot identity; do not copy the exact slide layout unless requested"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "accepted",
+      "dispatch": null,
+      "result": {
+        "final_image": "origin_image/slide_13.png",
+        "accepted_sample": true
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_14",
+      "number": 14,
+      "title": "建議四：真的需要人性化嗎？",
+      "job": "prompts/slide_14.json",
+      "out": "origin_image/slide_14.png",
+      "input_images": [
+        {
+          "path": "C:\\yode\\code\\slides\\AI-humanlike-interaction-guide\\origin_image\\slide_13.png",
+          "role": "approved sample slide style reference",
+          "fidelity": "match palette, typography mood, density, texture, 2D spec diagram style, and original robot identity; do not copy the exact slide layout unless requested"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "pending",
+      "dispatch": null,
+      "result": null,
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_15",
+      "number": 15,
+      "title": "結語與帶走心法",
+      "job": "prompts/slide_15.json",
+      "out": "origin_image/slide_15.png",
+      "input_images": [
+        {
+          "path": "C:\\yode\\code\\slides\\AI-humanlike-interaction-guide\\origin_image\\slide_13.png",
+          "role": "approved sample slide style reference",
+          "fidelity": "match palette, typography mood, density, texture, 2D spec diagram style, and original robot identity; do not copy the exact slide layout unless requested"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "pending",
+      "dispatch": null,
+      "result": null,
+      "blocker": null
+    }
+  ],
+  "updated_at": "2026-06-24T07:11:09Z"
+}
